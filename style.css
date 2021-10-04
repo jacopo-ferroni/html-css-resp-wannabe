@@ -71,3 +71,24 @@ img {
 .clear {
   clear: both;
 }
+
+@media screen and (max-width: 420px){
+  
+
+  .container .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .row img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .first img {
+    width: 100%;
+    padding: 0px;
+  }
+}
