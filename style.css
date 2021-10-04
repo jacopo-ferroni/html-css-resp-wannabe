@@ -73,7 +73,9 @@ img {
 }
 
 @media screen and (max-width: 420px){
-  
+  * {
+    box-sizing: border-box;
+  }
 
   .container .row{
     display: flex;
@@ -85,10 +87,18 @@ img {
   .row img {
     width: 100%;
     object-fit: contain;
+    height: auto;
   }
 
-  .first img {
+  #why .row img {
     width: 100%;
-    padding: 0px;
+    object-fit: contain;
   }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+  float: left;
+  width: 100%;
+}
 }
